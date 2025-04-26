@@ -6,7 +6,7 @@ You can use all available commands from the original PDS admin tool, **except** 
 ## Usage Examples
 
 ```sh
-docker run -it --rm aykhans/bsky-pdsadmin help
+docker run --rm aykhans/bsky-pdsadmin help
 ```
 
 ### Account Management
@@ -14,7 +14,7 @@ docker run -it --rm aykhans/bsky-pdsadmin help
 **List accounts:**
 
 ```sh
-docker run -it --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account list
+docker run --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account list
 ```
 
 **Create an account:**
@@ -32,19 +32,19 @@ docker run -it --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account delete
 **Takedown an account:**
 
 ```sh
-docker run -it --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account takedown <DID>
+docker run --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account takedown <DID>
 ```
 
 **Untakedown an account:**
 
 ```sh
-docker run -it --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account untakedown <DID>
+docker run --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account untakedown <DID>
 ```
 
 **Reset an account password:**
 
 ```sh
-docker run -it --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account reset-password <DID>
+docker run --rm --env-file /pds/pds.env aykhans/bsky-pdsadmin account reset-password <DID>
 ```
 
 ### Request a Crawl
